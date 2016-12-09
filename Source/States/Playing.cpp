@@ -1,6 +1,7 @@
 #include "Playing.h"
 
 #include <iostream>
+#include <SFML/System/Clock.hpp>
 
 std::vector<GLfloat> vertexPositions =
 {
@@ -27,6 +28,8 @@ std::vector<GLuint> indices =
 
 namespace State
 {
+    sf::Clock clock;
+
     Playing::Playing(Application& application)
     :   Game_State  (application)
     ,   m_model     (vertexPositions, textureCoords, indices)
@@ -46,7 +49,10 @@ namespace State
 
     void Playing::draw()
     {
+
         m_shader.bind();
+        m_shader.setTime(clock.getElapsedTime().asSeconds());
+
         m_model.bind();
         m_texture.bind();
 
