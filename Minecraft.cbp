@@ -63,6 +63,10 @@
 		<Unit filename="Source/Display.h" />
 		<Unit filename="Source/Model.cpp" />
 		<Unit filename="Source/Model.h" />
+		<Unit filename="Source/Renderer/Master.cpp" />
+		<Unit filename="Source/Renderer/Master.h" />
+		<Unit filename="Source/Renderer/Simple.cpp" />
+		<Unit filename="Source/Renderer/Simple.h" />
 		<Unit filename="Source/Shaders/Shader_Loader.cpp" />
 		<Unit filename="Source/Shaders/Shader_Loader.h" />
 		<Unit filename="Source/Shaders/Shader_Program.cpp" />

@@ -3,6 +3,8 @@
 #include <iostream>
 #include <SFML/System/Clock.hpp>
 
+#include "../Renderer/Master.h"
+
 std::vector<GLfloat> vertexPositions =
 {
     0.5, 0.5,   //top right
@@ -35,6 +37,7 @@ namespace State
     ,   m_model     (vertexPositions, textureCoords, indices)
     {
         m_texture.load("grass");
+        m_texture.bind();
     }
 
     void Playing::input()
@@ -47,19 +50,8 @@ namespace State
 
     }
 
-    void Playing::draw()
+    void Playing::draw(Renderer::Master& renderer)
     {
-
-        m_shader.bind();
-        m_shader.setTime(clock.getElapsedTime().asSeconds());
-
-        m_model.bind();
-        m_texture.bind();
-
-        glDrawElements(GL_TRIANGLES, m_model.getIndicesCount(), GL_UNSIGNED_INT, nullptr);
-
-        m_texture.unbind();
-        m_model.unbind();
-        m_shader.unbind();
+        renderer.draw(m_model);
     }
 }

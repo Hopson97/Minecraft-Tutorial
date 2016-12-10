@@ -22,12 +22,12 @@ Model::~Model()
     glDeleteBuffers(m_buffers.size(), m_buffers.data());
 }
 
-void Model::bind()
+void Model::bind() const
 {
     glBindVertexArray(m_vao);
 }
 
-void Model::unbind()
+void Model::unbind() const
 {
     glBindVertexArray(0);
 }
