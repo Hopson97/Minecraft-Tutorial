@@ -3,8 +3,7 @@
 
 #include "Simple.h"
 
-
-class Model;
+class Quad;
 
 namespace Renderer
 {
@@ -15,7 +14,7 @@ namespace Renderer
 
             void update();
 
-            void draw(const Model& model);
+            void draw(const Quad& model);
 
         private:
             Simple m_simpleRenderer;

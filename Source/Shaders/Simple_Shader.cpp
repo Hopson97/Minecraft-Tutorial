@@ -13,10 +13,16 @@ namespace Shader
         loadFloat(m_locationTime, time);
     }
 
+    void Simple_Shader::setPosition(const Vector2& position)
+    {
+        loadVector2(m_locationPosition, position);
+    }
+
 
     void Simple_Shader::getUniformLocations()
     {
-        m_locationTime = glGetUniformLocation(getID(), "time");
+        m_locationTime      = glGetUniformLocation(getID(), "time");
+        m_locationPosition  = glGetUniformLocation(getID(), "position");
     }
 
 }

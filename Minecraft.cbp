@@ -61,6 +61,8 @@
 		<Unit filename="Source/Application.h" />
 		<Unit filename="Source/Display.cpp" />
 		<Unit filename="Source/Display.h" />
+		<Unit filename="Source/Entity.h" />
+		<Unit filename="Source/Glm_Common.h" />
 		<Unit filename="Source/Model.cpp" />
 		<Unit filename="Source/Model.h" />
 		<Unit filename="Source/Renderer/Master.cpp" />
@@ -77,6 +79,8 @@
 		<Unit filename="Source/States/Game_State.h" />
 		<Unit filename="Source/States/Playing.cpp" />
 		<Unit filename="Source/States/Playing.h" />
+		<Unit filename="Source/Temp/Quad.cpp" />
+		<Unit filename="Source/Temp/Quad.h" />
 		<Unit filename="Source/Texture/Texture.cpp" />
 		<Unit filename="Source/Texture/Texture.h" />
 		<Unit filename="Source/main.cpp" />
