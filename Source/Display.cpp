@@ -6,9 +6,6 @@
 
 namespace Display
 {
-    constexpr static int WIDTH = 1280;
-    constexpr static int HEIGHT = 720;
-
     std::unique_ptr<sf::RenderWindow> window;
 
     void init()

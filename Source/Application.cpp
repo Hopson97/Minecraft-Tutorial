@@ -15,11 +15,11 @@ void Application::runMainGameLoop()
     {
         m_renderer.clear();
 
-        m_states.top()->input();
-        m_states.top()->update();
-        m_states.top()->draw(m_renderer);
+        m_states.top()->input   (camera);
+        m_states.top()->update  (camera);
+        m_states.top()->draw    (m_renderer);
 
-        m_renderer.update();
+        m_renderer.update(camera);
         Display::checkForClose();
     }
 }

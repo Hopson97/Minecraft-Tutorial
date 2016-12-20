@@ -8,7 +8,7 @@ Model::Model(const std::vector<GLfloat>& vertexPositions,
     glGenVertexArrays(1, &m_vao);
     glBindVertexArray(m_vao);
 
-    addVBO(2, vertexPositions);
+    addVBO(3, vertexPositions);
     addVBO(2, textureCoordinates);
     addEBO(indices);
 

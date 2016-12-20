@@ -18,15 +18,17 @@ namespace State
         public:
             Playing(Application& application);
 
-            void input  () override;
-            void update () override;
+            void input  (Entity& camera) override;
+            void update (Entity& camera) override;
             void draw   (Renderer::Master& renderer) override;
 
         private:
             Shader::Simple_Shader m_shader;
             Texture::Basic_Texture m_texture;
 
-            Quad m_quad;
+            //Quad m_quad;
+
+            std::vector<Quad*> m_quads;
     };
 }
 

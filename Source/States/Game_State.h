@@ -2,6 +2,7 @@
 #define GAME_STATE_H_INCLUDED
 
 class Application;
+struct Entity;
 
 namespace Renderer
 {
@@ -15,8 +16,8 @@ namespace State
         public:
             Game_State(Application& application);
 
-            virtual void input  () = 0;
-            virtual void update () = 0;
+            virtual void input  (Entity& camera) = 0;
+            virtual void update (Entity& camera) = 0;
             virtual void draw   (Renderer::Master& renderer) = 0;
 
         protected:

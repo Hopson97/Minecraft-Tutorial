@@ -63,6 +63,8 @@
 		<Unit filename="Source/Display.h" />
 		<Unit filename="Source/Entity.h" />
 		<Unit filename="Source/Glm_Common.h" />
+		<Unit filename="Source/Maths/Matrix.cpp" />
+		<Unit filename="Source/Maths/Matrix.h" />
 		<Unit filename="Source/Model.cpp" />
 		<Unit filename="Source/Model.h" />
 		<Unit filename="Source/Renderer/Master.cpp" />

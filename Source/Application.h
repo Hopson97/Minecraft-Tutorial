@@ -8,6 +8,8 @@
 
 #include "Renderer/Master.h"
 
+#include "Entity.h"
+
 class Application
 {
     public:
@@ -22,6 +24,8 @@ class Application
         std::stack<std::unique_ptr<State::Game_State>> m_states;
 
         Renderer::Master m_renderer;
+
+        Entity camera;
 };
 
 #endif // APPLICATION_H_INCLUDED
