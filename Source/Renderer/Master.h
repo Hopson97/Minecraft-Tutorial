@@ -4,7 +4,7 @@
 #include "Simple.h"
 
 class Quad;
-struct Entity;
+struct Camera;
 
 namespace Renderer
 {
@@ -13,7 +13,7 @@ namespace Renderer
         public:
             void clear();
 
-            void update(const Entity& camera);
+            void update(const Camera& camera);
 
             void draw(const Quad& model);
 

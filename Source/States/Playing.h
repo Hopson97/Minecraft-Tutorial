@@ -10,6 +10,7 @@
 #include "../Temp/Quad.h"
 
 class Application;
+class Camera;
 
 namespace State
 {
@@ -18,17 +19,16 @@ namespace State
         public:
             Playing(Application& application);
 
-            void input  (Entity& camera) override;
-            void update (Entity& camera) override;
+            void input  (Camera& camera) override;
+            void update (Camera& camera, float dt) override;
             void draw   (Renderer::Master& renderer) override;
 
         private:
             Shader::Simple_Shader m_shader;
             Texture::Basic_Texture m_texture;
 
-            //Quad m_quad;
+            Quad m_quad;
 
-            std::vector<Quad*> m_quads;
     };
 }
 

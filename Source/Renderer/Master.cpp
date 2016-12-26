@@ -9,7 +9,7 @@ namespace Renderer
         Display::clear();
     }
 
-    void Master::update(const Entity& camera)
+    void Master::update(const Camera& camera)
     {
         m_simpleRenderer.update(camera);
 
