@@ -23,6 +23,8 @@ namespace Display
         glewInit();
         glViewport(0, 0, WIDTH, HEIGHT);
 
+        glEnable(GL_DEPTH_TEST);
+
         window->setMouseCursorVisible(false);
     }
 
