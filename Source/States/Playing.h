@@ -5,7 +5,7 @@
 
 #include "../Model.h"
 #include "../Shaders/Simple_Shader.h"
-#include "../Texture/Texture.h"
+#include "../Texture/Texture_Atlas.h"
 
 #include "../Temp/Quad.h"
 
@@ -25,7 +25,7 @@ namespace State
 
         private:
             Shader::Simple_Shader m_shader;
-            Texture::Basic_Texture m_texture;
+            Texture::Atlas m_texture;
 
             Quad m_quad;
 

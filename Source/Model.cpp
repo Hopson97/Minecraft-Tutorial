@@ -22,6 +22,26 @@ Model::~Model()
     glDeleteBuffers(m_buffers.size(), m_buffers.data());
 }
 
+void Model::addData(const std::vector<GLfloat>& vertexPositions,
+                    const std::vector<GLfloat>& textureCoordinates,
+                    const std::vector<GLuint>&  indices)
+{
+    glDeleteVertexArrays(1, &m_vao);
+    glDeleteBuffers(m_buffers.size(), m_buffers.data());
+
+    m_indicesCount = indices.size();
+    glGenVertexArrays(1, &m_vao);
+    glBindVertexArray(m_vao);
+
+    addVBO(3, vertexPositions);
+    addVBO(2, textureCoordinates);
+    addEBO(indices);
+
+    glBindVertexArray(0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+}
+
+
 void Model::bind() const
 {
     glBindVertexArray(m_vao);

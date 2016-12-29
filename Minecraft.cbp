@@ -87,6 +87,8 @@
 		<Unit filename="Source/Temp/Quad.h" />
 		<Unit filename="Source/Texture/Texture.cpp" />
 		<Unit filename="Source/Texture/Texture.h" />
+		<Unit filename="Source/Texture/Texture_Atlas.cpp" />
+		<Unit filename="Source/Texture/Texture_Atlas.h" />
 		<Unit filename="Source/main.cpp" />
 		<Unit filename="glew32.dll" />
 		<Unit filename="openal32.dll" />
