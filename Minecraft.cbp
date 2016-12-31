@@ -89,6 +89,17 @@
 		<Unit filename="Source/Texture/Texture.h" />
 		<Unit filename="Source/Texture/Texture_Atlas.cpp" />
 		<Unit filename="Source/Texture/Texture_Atlas.h" />
+		<Unit filename="Source/World/Block/Block_Data.cpp" />
+		<Unit filename="Source/World/Block/Block_Data.h" />
+		<Unit filename="Source/World/Block/Block_Database.cpp" />
+		<Unit filename="Source/World/Block/Block_Database.h" />
+		<Unit filename="Source/World/Block/Block_ID.h" />
+		<Unit filename="Source/World/Block/Block_Types/Air.cpp" />
+		<Unit filename="Source/World/Block/Block_Types/Air.h" />
+		<Unit filename="Source/World/Block/Block_Types/Block_Type.cpp" />
+		<Unit filename="Source/World/Block/Block_Types/Block_Type.h" />
+		<Unit filename="Source/World/Block/Block_Types/Grass.cpp" />
+		<Unit filename="Source/World/Block/Block_Types/Grass.h" />
 		<Unit filename="Source/main.cpp" />
 		<Unit filename="glew32.dll" />
 		<Unit filename="openal32.dll" />
