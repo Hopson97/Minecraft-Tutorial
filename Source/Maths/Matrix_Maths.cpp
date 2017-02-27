@@ -1,4 +1,4 @@
-#include "Matrix.h"
+#include "Matrix_Maths.h"
 
 #include "../Entity.h"
 #include "../Display.h"
@@ -35,7 +35,7 @@ namespace Maths
 
     Matrix4 createProjMatrix()
     {
-        return glm::perspective(glm::radians(120.0f),
+        return glm::perspective(glm::radians(95.0f),
                                 (float)Display::WIDTH/ (float)Display::HEIGHT,
                                 0.001f,
                                 1000.0f);

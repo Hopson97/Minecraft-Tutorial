@@ -1,7 +1,7 @@
 #ifndef MASTER_H_INCLUDED
 #define MASTER_H_INCLUDED
 
-#include "Simple.h"
+#include "RSimple.h"
 
 class Quad;
 struct Camera;

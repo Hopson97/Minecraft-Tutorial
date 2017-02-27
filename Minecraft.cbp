@@ -55,6 +55,8 @@
 			<Add directory="D:/_Programming Libraries/C++/SFML-2.4.1/lib" />
 			<Add directory="D:/_Programming Libraries/C++/glew-2.0.0/lib/Release/Win32" />
 		</Linker>
+		<Unit filename="Data/Blocks/Air.block" />
+		<Unit filename="Data/Blocks/Grass.block" />
 		<Unit filename="Data/Shaders/Simple_Fragment.glsl" />
 		<Unit filename="Data/Shaders/Simple_Vertex.glsl" />
 		<Unit filename="Source/Application.cpp" />
@@ -65,14 +67,14 @@
 		<Unit filename="Source/Display.h" />
 		<Unit filename="Source/Entity.h" />
 		<Unit filename="Source/Glm_Common.h" />
-		<Unit filename="Source/Maths/Matrix.cpp" />
-		<Unit filename="Source/Maths/Matrix.h" />
+		<Unit filename="Source/Maths/Matrix_Maths.cpp" />
+		<Unit filename="Source/Maths/Matrix_Maths.h" />
 		<Unit filename="Source/Model.cpp" />
 		<Unit filename="Source/Model.h" />
-		<Unit filename="Source/Renderer/Master.cpp" />
-		<Unit filename="Source/Renderer/Master.h" />
-		<Unit filename="Source/Renderer/Simple.cpp" />
-		<Unit filename="Source/Renderer/Simple.h" />
+		<Unit filename="Source/Renderer/RMaster.cpp" />
+		<Unit filename="Source/Renderer/RMaster.h" />
+		<Unit filename="Source/Renderer/RSimple.cpp" />
+		<Unit filename="Source/Renderer/RSimple.h" />
 		<Unit filename="Source/Shaders/Shader_Loader.cpp" />
 		<Unit filename="Source/Shaders/Shader_Loader.h" />
 		<Unit filename="Source/Shaders/Shader_Program.cpp" />
@@ -81,8 +83,8 @@
 		<Unit filename="Source/Shaders/Simple_Shader.h" />
 		<Unit filename="Source/States/Game_State.cpp" />
 		<Unit filename="Source/States/Game_State.h" />
-		<Unit filename="Source/States/Playing.cpp" />
-		<Unit filename="Source/States/Playing.h" />
+		<Unit filename="Source/States/SPlaying.cpp" />
+		<Unit filename="Source/States/SPlaying.h" />
 		<Unit filename="Source/Temp/Quad.cpp" />
 		<Unit filename="Source/Temp/Quad.h" />
 		<Unit filename="Source/Texture/Texture.cpp" />
@@ -94,12 +96,12 @@
 		<Unit filename="Source/World/Block/Block_Database.cpp" />
 		<Unit filename="Source/World/Block/Block_Database.h" />
 		<Unit filename="Source/World/Block/Block_ID.h" />
-		<Unit filename="Source/World/Block/Block_Types/Air.cpp" />
-		<Unit filename="Source/World/Block/Block_Types/Air.h" />
+		<Unit filename="Source/World/Block/Block_Types/BAir.cpp" />
+		<Unit filename="Source/World/Block/Block_Types/BAir.h" />
+		<Unit filename="Source/World/Block/Block_Types/BGrass.cpp" />
+		<Unit filename="Source/World/Block/Block_Types/BGrass.h" />
 		<Unit filename="Source/World/Block/Block_Types/Block_Type.cpp" />
 		<Unit filename="Source/World/Block/Block_Types/Block_Type.h" />
-		<Unit filename="Source/World/Block/Block_Types/Grass.cpp" />
-		<Unit filename="Source/World/Block/Block_Types/Grass.h" />
 		<Unit filename="Source/main.cpp" />
 		<Unit filename="glew32.dll" />
 		<Unit filename="openal32.dll" />

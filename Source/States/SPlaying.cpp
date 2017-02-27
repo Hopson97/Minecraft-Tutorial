@@ -1,9 +1,8 @@
-#include "Playing.h"
+#include "SPlaying.h"
 
-#include <iostream>
 #include <SFML/System/Clock.hpp>
 
-#include "../Renderer/Master.h"
+#include "../Renderer/RMaster.h"
 
 #include "../Camera.h"
 
@@ -29,7 +28,6 @@ namespace State
 
     void Playing::update(Camera& camera, float dt)
     {
-        m_quad.rotation += .1;
         camera.input(dt);
     }
 

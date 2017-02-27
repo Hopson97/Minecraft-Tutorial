@@ -44,7 +44,7 @@ void Camera::input(float dt)
 
 void Camera::mouseInput()
 {
-    static sf::Vector2i lastMousePosition;
+    static sf::Vector2i lastMousePosition = sf::Mouse::getPosition();
 
     auto mouseChange = sf::Mouse::getPosition() - lastMousePosition;
 
