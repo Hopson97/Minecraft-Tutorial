@@ -6,7 +6,7 @@
 
 #include "States/Game_State.h"
 
-#include "Renderer/Master.h"
+#include "Renderer/RMaster.h"
 
 #include "Entity.h"
 #include "Camera.h"

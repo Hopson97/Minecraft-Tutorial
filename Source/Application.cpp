@@ -2,7 +2,7 @@
 
 #include "Display.h"
 
-#include "States/Playing.h"
+#include "States/SPlaying.h"
 
 Application::Application()
 {
