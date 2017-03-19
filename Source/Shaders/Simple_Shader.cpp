@@ -1,6 +1,6 @@
 #include "Simple_Shader.h"
 
-#include "../Maths/Matrix.h"
+#include "../Maths/Matrix_Maths.h"
 
 namespace Shader
 {
@@ -8,11 +8,6 @@ namespace Shader
     :   Shader_Program ("Simple_Vertex", "Simple_Fragment")
     {
         getUniformLocations();
-
-        bind();
-        loadMatrix4(m_locationProjMatrix, Maths::createProjMatrix());
-        unbind();
-
     }
 
     void Simple_Shader::setTime(float time)
