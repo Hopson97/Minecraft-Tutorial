@@ -7,4 +7,12 @@ namespace Block
     {
 
     }
+
+    const Data& Type::getData() const
+    {
+        return m_data;
+    }
+
+
+
 }
