@@ -100,6 +100,11 @@
 		<Unit filename="Source/World/Block/Block_Types/BGrass.h" />
 		<Unit filename="Source/World/Block/Block_Types/Block_Type.cpp" />
 		<Unit filename="Source/World/Block/Block_Types/Block_Type.h" />
+		<Unit filename="Source/World/Chunk/Chunk_Block.cpp" />
+		<Unit filename="Source/World/Chunk/Chunk_Block.h" />
+		<Unit filename="Source/World/Chunk/Chunk_Section.cpp" />
+		<Unit filename="Source/World/Chunk/Chunk_Section.h" />
+		<Unit filename="Source/World/World_Constants.h" />
 		<Unit filename="Source/main.cpp" />
 		<Unit filename="glew32.dll" />
 		<Unit filename="libgcc_s_sjlj-1.dll" />

@@ -2,6 +2,7 @@
 #define CHUNK_BLOCK_H_INCLUDED
 
 #include <cstdint>
+#include <array>
 
 #include "../Block/Block_ID.h"
 

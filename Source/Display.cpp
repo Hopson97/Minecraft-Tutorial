@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include <GL/glew.h>
 
+#include "World/Chunk/Chunk_Block.h"
+
 namespace Display
 {
     std::unique_ptr<sf::RenderWindow> window;
