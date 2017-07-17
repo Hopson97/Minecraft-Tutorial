@@ -8,13 +8,12 @@
 int main()
 {
     Random::init();
-
     Random::Generator<std::minstd_rand> randomGen;
 
     Display::init();
 
-    Application app;
 
+    Application app;
     app.runMainGameLoop();
 
     return 0;
