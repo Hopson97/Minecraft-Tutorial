@@ -6,14 +6,14 @@ namespace Renderer
 {
     void Master::clear()
     {
-        Display::clear();
+        Display::get().clear();
     }
 
     void Master::update(const Camera& camera)
     {
         m_simpleRenderer.update(camera);
 
-        Display::update();
+        Display::get().update();
     }
 
     void Master::draw(const Quad& model)

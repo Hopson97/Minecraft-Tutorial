@@ -1,27 +1,38 @@
 #ifndef DISPLAY_H_INCLUDED
 #define DISPLAY_H_INCLUDED
 
+#include <SFML/Graphics.hpp>
+
+#include "Util/Singleton.h"
+
 namespace sf
 {
     class Window;
 }
 
-namespace Display
+class Display : public Singleton
 {
-    constexpr int WIDTH = 1280;
-    constexpr int HEIGHT = 720;
+    public:
+        constexpr static int WIDTH = 1280;
+        constexpr static int HEIGHT = 720;
 
-    void init();
-    void close();
+        static Display& get();
 
-    void clear();
-    void update();
+        void close();
 
-    void checkForClose();
+        void clear();
+        void update();
 
-    bool isOpen();
+        void checkForClose();
 
-    const sf::Window& get();
-}
+        bool isOpen();
+
+        const sf::RenderWindow& getRaw();
+
+    private:
+        Display();
+
+        sf::RenderWindow m_window;
+};
 
 #endif // DISPLAY_H_INCLUDED

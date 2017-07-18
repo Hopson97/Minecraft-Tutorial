@@ -12,7 +12,6 @@ class Singleton
 
     protected:
         Singleton() = default;
-        virtual ~Singleton() = default;
 };
 
 #endif // SINGLETON_H_INCLUDED

@@ -1,72 +1,70 @@
 #include "Display.h"
 
-#include <memory>
-#include <SFML/Graphics.hpp>
+
 #include <GL/glew.h>
 
-#include "World/Chunk/Chunk_Block.h"
-
-namespace Display
+Display::Display()
 {
-    std::unique_ptr<sf::RenderWindow> window;
+    sf::ContextSettings settings;
+    settings.depthBits = 24;
+    settings.majorVersion = 3;
+    settings.minorVersion = 3; //OpenGL 3.3
 
-    void init()
+    m_window.create(sf::VideoMode(WIDTH, HEIGHT),
+                    "Window",
+                    sf::Style::Close,
+                    settings);
+
+    glewInit();
+    glViewport(0, 0, WIDTH, HEIGHT);
+
+    glEnable(GL_DEPTH_TEST);
+
+    m_window.setMouseCursorVisible(false);
+}
+
+Display& Display::get()
+{
+    static Display display;
+    return display;
+}
+
+void Display::close()
+{
+    m_window.close();
+}
+
+void Display::clear()
+{
+    glClearColor(0.0, 0.0, 0.0, 1.0);
+    glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+}
+
+void Display::update()
+{
+    m_window.display();
+}
+
+void Display::checkForClose()
+{
+    sf::Event e;
+    while (m_window.pollEvent(e))
     {
-        sf::ContextSettings settings;
-        settings.depthBits = 24;
-        settings.majorVersion = 3;
-        settings.minorVersion = 3; //OpenGL 3.3
-
-        window = std::make_unique<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT),
-                                                    "Window",
-                                                    sf::Style::Close,
-                                                    settings);
-
-        glewInit();
-        glViewport(0, 0, WIDTH, HEIGHT);
-
-        glEnable(GL_DEPTH_TEST);
-
-        window->setMouseCursorVisible(false);
-    }
-
-    void close()
-    {
-        window->close();
-    }
-
-    void clear()
-    {
-        glClearColor(0.0, 0.0, 0.0, 1.0);
-        glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
-    }
-
-    void update()
-    {
-        window->display();
-    }
-
-    void checkForClose()
-    {
-        sf::Event e;
-        while (window->pollEvent(e))
+        if (e.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
         {
-            if (e.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-            {
-                close();
-            }
+            close();
         }
     }
+}
 
-    bool isOpen()
-    {
-        return window->isOpen();
-    }
+bool Display::isOpen()
+{
+    return m_window.isOpen();
+}
 
-    const sf::Window& get()
-    {
-        return *window;
-    }
+const sf::RenderWindow& Display::getRaw()
+{
+    return m_window;
 }
 
 
