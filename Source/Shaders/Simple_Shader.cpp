@@ -4,8 +4,9 @@
 
 namespace Shader
 {
-    Simple_Shader::Simple_Shader()
-    :   Shader_Program ("Simple_Vertex", "Simple_Fragment")
+    Simple_Shader::Simple_Shader(const std::string& vertexFile,
+                                 const std::string& fragmentFile)
+    :   Shader_Program (vertexFile, fragmentFile)
     {
         getUniformLocations();
     }
@@ -38,7 +39,6 @@ namespace Shader
         m_locationViewMatrix    = glGetUniformLocation(getID(), "viewMatrix");
         m_locationModelMatrix   = glGetUniformLocation(getID(), "modelMatrix");
         m_locationProjMatrix    = glGetUniformLocation(getID(), "projMatrix");
-
     }
 
 }

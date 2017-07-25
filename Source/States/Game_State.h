@@ -15,6 +15,7 @@ namespace State
     {
         public:
             Game_State(Application& application);
+            virtual ~Game_State() = default;
 
             virtual void input  (Camera& camera) = 0;
             virtual void update (Camera& camera, float dt) = 0;

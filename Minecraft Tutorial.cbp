@@ -55,6 +55,8 @@
 			<Add directory="D:/_Programming Libraries/C++/SFML/MinGW32/lib" />
 			<Add directory="D:/_Programming Libraries/C++/glew-2.0.0/lib/Release/Win32" />
 		</Linker>
+		<Unit filename="Data/Shaders/Simple_Fragment.glsl" />
+		<Unit filename="Data/Shaders/Simple_Vertex.glsl" />
 		<Unit filename="Source/Application.cpp" />
 		<Unit filename="Source/Application.h" />
 		<Unit filename="Source/Camera.cpp" />
@@ -67,10 +69,13 @@
 		<Unit filename="Source/Maths/Matrix_Maths.h" />
 		<Unit filename="Source/Model.cpp" />
 		<Unit filename="Source/Model.h" />
+		<Unit filename="Source/Renderer/RChunk.h" />
 		<Unit filename="Source/Renderer/RMaster.cpp" />
 		<Unit filename="Source/Renderer/RMaster.h" />
 		<Unit filename="Source/Renderer/RSimple.cpp" />
 		<Unit filename="Source/Renderer/RSimple.h" />
+		<Unit filename="Source/Shaders/Chunk_Shader.cpp" />
+		<Unit filename="Source/Shaders/Chunk_Shader.h" />
 		<Unit filename="Source/Shaders/Shader_Loader.cpp" />
 		<Unit filename="Source/Shaders/Shader_Loader.h" />
 		<Unit filename="Source/Shaders/Shader_Program.cpp" />
