@@ -1,4 +1,4 @@
-# note
+# IMPORTANT:
 
 I am no long continuing the series.
 
